@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <PackageId>AshfaqAliZardariOfficial.Util.ModelConverter</PackageId>
+    <Authors>Ashfaq Ali Zardari</Authors>
+    <Description>A C# Library to convert the model class to idictionary and datatable to list model class.</Description>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <RepositoryUrl>https://github.com/AshfaqAliZardariOfficial/ModelConverter</RepositoryUrl>
+    <PackageTags>Converting, Converter, Model Class, IDictionary, DataTable</PackageTags>
+    <PackageReleaseNotes>v1.0.0
+ - Convert System.Data.DataTable to System.Collections.Generic.List&lt;ModelClass&gt; object.
+ - Convert the Model Class to IDictionary&lt;string, object&gt; object.</PackageReleaseNotes>
+    <NeutralLanguage />
+  </PropertyGroup>
+
+</Project>
