@@ -10,8 +10,12 @@
     <PackageTags>Converting, Converter, Model Class, IDictionary, DataTable</PackageTags>
     <PackageReleaseNotes>v1.0.0
  - Convert System.Data.DataTable to System.Collections.Generic.List&lt;ModelClass&gt; object.
- - Convert the Model Class to IDictionary&lt;string, object&gt; object.</PackageReleaseNotes>
+ - Convert the Model Class to IDictionary&lt;string, object&gt; object.
+
+v1.1.0
+ - Hide model properties feature added on GetDictionary.</PackageReleaseNotes>
     <NeutralLanguage />
+    <Version>1.1.0</Version>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
