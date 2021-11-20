@@ -12,11 +12,11 @@ namespace ModelConverter
     public class ModelConverter<TObject>
     {
         /// <summary>
-        /// Convert System.Data.DataTable to System.Collections.Generic.List<ModelClass> object.
+        /// Convert System.Data.DataTable to System.Collections.Generic.List&gt;ModelClass&lt; object.
         /// </summary>
         /// <typeparam name="T">Model Class</typeparam>
         /// <param name="dt">System.Data.DataTable</param>
-        /// <returns>System.Collections.Generic.List<ModelClass></returns>
+        /// <returns>System.Collections.Generic.List&lt;ModelClass&lt;</returns>
         public static List<T> GetModelList<T>(DataTable dt)
         {
             List<T> data = new List<T>();
@@ -53,12 +53,14 @@ namespace ModelConverter
             }
             return obj;
         }
+         
         /// <summary>
-        /// Convert the Model Class to IDictionary<string, object> object.
+        /// Convert the Model Class to IDictionary&lt;string&gt;, object&gt; object.
         /// </summary>
         /// <param name="o">Model Class</param>
-        /// <returns>System.Collections.Generic.IDictionary<string, object></returns>
-        public static IDictionary<string, object> GetDictionary(TObject o)
+        /// <param name="HiddenProperties">Hide the model class properties passing List&lt;string&gt; HiddenProperties object with model class property name to hide properties.</param>
+        /// <returns>System.Collections.Generic.IDictionary&lt;string, object&gt;</returns>
+        public static IDictionary<string, object> GetDictionary(TObject o, List<string> HiddenProperties = null)
         {
             IDictionary<string, object> res = new Dictionary<string, object>();
             PropertyInfo[] props = typeof(TObject).GetProperties();
@@ -66,7 +68,15 @@ namespace ModelConverter
             {
                 if (props[i].CanRead)
                 {
-                    res.Add(props[i].Name, props[i].GetValue(o, null));
+                    var caseInsensitiveDictionary = HiddenProperties != null && HiddenProperties.Count > 0 ? HiddenProperties.ConvertAll(h => h.ToLower()) : null;
+                    if (caseInsensitiveDictionary != null && caseInsensitiveDictionary.Contains(props[i].Name.ToLower()))
+                    {
+                        continue;
+                    }
+                    else
+                    {
+                        res.Add(props[i].Name, o != null ? props[i].GetValue(o, null) : null);
+                    }
                 }
             }
             return res;
