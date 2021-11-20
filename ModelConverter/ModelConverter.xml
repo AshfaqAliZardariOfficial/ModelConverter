@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ModelConverter</name>
+    </assembly>
+    <members>
+        <member name="T:ModelConverter.ModelConverter`1">
+            <summary>
+            ModelConverter Class.
+            </summary>
+            <typeparam name="TObject">Model Class</typeparam>
+        </member>
+        <member name="M:ModelConverter.ModelConverter`1.GetModelList``1(System.Data.DataTable)">
+            <summary>
+            Convert System.Data.DataTable to System.Collections.Generic.List&gt;ModelClass&lt; object.
+            </summary>
+            <typeparam name="T">Model Class</typeparam>
+            <param name="dt">System.Data.DataTable</param>
+            <returns>System.Collections.Generic.List&lt;ModelClass&lt;</returns>
+        </member>
+        <member name="M:ModelConverter.ModelConverter`1.GetItem``1(System.Data.DataRow)">
+            <summary>
+            Get row into model properties.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="dr"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ModelConverter.ModelConverter`1.GetDictionary(`0,System.Collections.Generic.List{System.String})">
+            <summary>
+            Convert the Model Class to IDictionary&lt;string&gt;, object&gt; object.
+            </summary>
+            <param name="o">Model Class</param>
+            <param name="HiddenProperties">Hide the model class properties passing List&lt;string&gt; HiddenProperties object with model class property name to hide properties.</param>
+            <returns>System.Collections.Generic.IDictionary&lt;string, object&gt;</returns>
+        </member>
+    </members>
+</doc>

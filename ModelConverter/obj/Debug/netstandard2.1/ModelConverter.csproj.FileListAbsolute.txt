@@ -1,7 +1,7 @@
 C:\Users\user\AshfaqAliZardariOfficial\ModelConverter\ModelConverter\bin\Debug\netstandard2.1\ModelConverter.deps.json
 C:\Users\user\AshfaqAliZardariOfficial\ModelConverter\ModelConverter\bin\Debug\netstandard2.1\ModelConverter.dll
 C:\Users\user\AshfaqAliZardariOfficial\ModelConverter\ModelConverter\bin\Debug\netstandard2.1\ModelConverter.pdb
-C:\Users\user\AshfaqAliZardariOfficial\ModelConverter\ModelConverter\obj\Debug\netstandard2.1\ModelConverter.csproj.AssemblyReference.cache
+C:\Users\user\AshfaqAliZardariOfficial\ModelConverter\ModelConverter\bin\Debug\netstandard2.1\ModelConverter.xml
 C:\Users\user\AshfaqAliZardariOfficial\ModelConverter\ModelConverter\obj\Debug\netstandard2.1\ModelConverter.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\user\AshfaqAliZardariOfficial\ModelConverter\ModelConverter\obj\Debug\netstandard2.1\ModelConverter.AssemblyInfoInputs.cache
 C:\Users\user\AshfaqAliZardariOfficial\ModelConverter\ModelConverter\obj\Debug\netstandard2.1\ModelConverter.AssemblyInfo.cs

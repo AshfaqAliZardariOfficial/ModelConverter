@@ -14,4 +14,8 @@
     <NeutralLanguage />
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>C:\Users\user\AshfaqAliZardariOfficial\ModelConverter\ModelConverter\ModelConverter.xml</DocumentationFile>
+  </PropertyGroup>
+
 </Project>
