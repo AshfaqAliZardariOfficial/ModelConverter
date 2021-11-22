@@ -4,33 +4,33 @@
 ## [Install Package](https://www.nuget.org/packages/AshfaqAliZardariOfficial.Util.ModelConverter/)
 > ##### Using Package Manager
 > ```
-> Install-Package AshfaqAliZardariOfficial.Util.ModelConverter -Version 1.1.0
+> Install-Package AshfaqAliZardariOfficial.Util.ModelConverter -Version 1.1.1
 > ```
 > ##### Using .NET CLI
 > 
 > ```
-> dotnet add package AshfaqAliZardariOfficial.Util.ModelConverter --version 1.1.0
+> dotnet add package AshfaqAliZardariOfficial.Util.ModelConverter --version 1.1.1
 > ```
 > ##### Using PackageReference
 > 
 > ```
-> <PackageReference Include="AshfaqAliZardariOfficial.Util.ModelConverter" Version="1.1.0" />
+> <PackageReference Include="AshfaqAliZardariOfficial.Util.ModelConverter" Version="1.1.1" />
 > ```
 > ##### Using Paket CLI
 > ```
-> paket add AshfaqAliZardariOfficial.Util.ModelConverter --version 1.1.0
+> paket add AshfaqAliZardariOfficial.Util.ModelConverter --version 1.1.1
 > ```
 > ##### Using Script & Interactive
 > ```
-> #r "nuget: AshfaqAliZardariOfficial.Util.ModelConverter, 1.1.0"
+> #r "nuget: AshfaqAliZardariOfficial.Util.ModelConverter, 1.1.1"
 > ```
 > ##### Using Cake
 > ```
 > // Install AshfaqAliZardariOfficial.Util.ModelConverter as a Cake Addin
-> #addin nuget:?package=AshfaqAliZardariOfficial.Util.ModelConverter&version=1.1.0
+> #addin nuget:?package=AshfaqAliZardariOfficial.Util.ModelConverter&version=1.1.1
 > 
 > // Install AshfaqAliZardariOfficial.Util.ModelConverter as a Cake Tool
-> #tool nuget:?package=AshfaqAliZardariOfficial.Util.ModelConverter&version=1.1.0
+> #tool nuget:?package=AshfaqAliZardariOfficial.Util.ModelConverter&version=1.1.1
 > ```
 
 ## How do I use
@@ -64,10 +64,14 @@ List<UserModel> Users = ModelConverter<UserModel>.GetModelList<UserModel>(UsersT
 ## :clock3: Versions
 | Version | Last updated |
 | --- | --- |
+| [1.1.1](https://www.nuget.org/packages/AshfaqAliZardariOfficial.Util.ModelConverter/1.1.1) | Nov 22, 2021, 4:35 PM GMT+5 |
 | [1.1.0](https://www.nuget.org/packages/AshfaqAliZardariOfficial.Util.ModelConverter/1.1.0) | Nov 20, 2021, 8:15 PM GMT+5 |
 | [1.0.0](https://www.nuget.org/packages/AshfaqAliZardariOfficial.Util.ModelConverter/1.0.0) | Nov 20, 2021, 12:29 PM GMT+5 |
 
 ## :book: Release Notes
+**v1.1.1**
+- Small bug fixed on GetModelList.
+ 
 **v1.1.0**
 - Hide model properties feature added on GetDictionary.
 
