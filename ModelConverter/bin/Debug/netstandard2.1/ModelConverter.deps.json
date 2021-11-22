@@ -7,7 +7,7 @@
   "targets": {
     ".NETStandard,Version=v2.1": {},
     ".NETStandard,Version=v2.1/": {
-      "ModelConverter/1.0.0": {
+      "ModelConverter/1.1.0": {
         "runtime": {
           "ModelConverter.dll": {}
         }
@@ -15,7 +15,7 @@
     }
   },
   "libraries": {
-    "ModelConverter/1.0.0": {
+    "ModelConverter/1.1.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
