@@ -45,7 +45,7 @@ namespace ModelConverter
             {
                 foreach (PropertyInfo pro in temp.GetProperties())
                 {
-                    if (pro.Name.ToLower() == column.ColumnName.ToLower())
+                    if (pro.Name == column.ColumnName)
                         pro.SetValue(obj, Convert.IsDBNull(dr[column.ColumnName]) ? null : dr[column.ColumnName]);
                     else
                         continue;
